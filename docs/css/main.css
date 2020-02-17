@@ -1,0 +1,261 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.container {
+  position: relative;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-title {
+  font-size: 92px;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004);
+}
+a {
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+.header {
+  position: relative;
+  height: 900px;
+  background-image: url(../img/header/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+       background-size: cover;
+  background-color: #6b737d;
+  z-index: 9;
+}
+.header::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 940px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0px 75px 30px 0 rgba(75, 70, 66, 0.71);
+     -moz-box-shadow: 0px 75px 30px 0 rgba(75, 70, 66, 0.71);
+          box-shadow: 0px 75px 30px 0 rgba(75, 70, 66, 0.71);
+  background: -webkit-radial-gradient(circle, rgba(86, 79, 76, 0.71) 0%, rgba(86, 83, 76, 0) 50%);
+  background: -moz-radial-gradient(circle, rgba(86, 79, 76, 0.71) 0%, rgba(86, 83, 76, 0) 50%);
+  background: -o-radial-gradient(circle, rgba(86, 79, 76, 0.71) 0%, rgba(86, 83, 76, 0) 50%);
+  background: radial-gradient(circle, rgba(86, 79, 76, 0.71) 0%, rgba(86, 83, 76, 0) 50%);
+}
+.nav-bar {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+}
+.nav-bar::before {
+  content: "";
+  background-color: rgba(86, 83, 76, 0.529);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.nav-bar_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 9;
+  padding: 20px 0;
+  color: #ffffff;
+}
+.logo-link {
+  font-size: 30px;
+  font-family: "scriptina", serif;
+  line-height: 1;
+  letter-spacing: 9px;
+  text-decoration: none;
+  -webkit-transition: text-shadow 0.2s ease-in;
+  -o-transition: text-shadow 0.2s ease-in;
+  -moz-transition: text-shadow 0.2s ease-in;
+  transition: text-shadow 0.2s ease-in;
+}
+.logo-link:visited {
+  color: inherit;
+}
+.logo-link:hover {
+  text-shadow: 2px 2px 2px #000;
+}
+.nav-bar_links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0;
+}
+.nav-bar_link {
+  display: inline-block;
+  margin-right: 38px;
+  font-size: 14px;
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+}
+.nav-bar_link:last-child {
+  margin-right: 0;
+}
+.nav-bar_link a {
+  text-decoration: none;
+  font-family: "Alegreya", serif;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+.nav-bar_link a:visited {
+  color: #fff;
+}
+.nav-bar_link a:hover {
+  color: #cccccc;
+}
+.nav-bar_socials {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-bar_socials-icon {
+  display: block;
+  margin-right: 28px;
+  font-size: 14px;
+}
+.nav-bar_socials-icon:last-child {
+  margin-right: 0;
+}
+.nav-bar_socials-icon .fa {
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+.nav-bar_socials-icon .fa:hover {
+  color: #808080;
+}
+.nav-bar_socials-icon .fa:visited {
+  color: inherit;
+}
+.header-content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-content_title {
+  margin-bottom: 56px;
+  text-align: center;
+}
+.header_dashed-line {
+  position: relative;
+  margin-bottom: 70px;
+  width: 186px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dashed-line {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.header-content_text {
+  font-size: 24px;
+  font-family: "Proxima Nova", Georgia, sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(61, 48, 41, 0.004);
+}
+.dashed_line_png {
+  border-width: 2px;
+  border-color: #ffffff;
+  border-style: dashed;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(61, 48, 41, 0.004);
+     -moz-box-shadow: 0px 1px 0px 0px rgba(61, 48, 41, 0.004);
+          box-shadow: 0px 1px 0px 0px rgba(61, 48, 41, 0.004);
+  position: absolute;
+  left: 705px;
+  top: 431px;
+  width: 186px;
+  height: 7px;
+  z-index: 248;
+}
+/*# sourceMappingURL=main.css.map */
